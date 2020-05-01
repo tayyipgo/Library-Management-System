@@ -11,7 +11,6 @@ const express = require("express"),
     localStrategy = require("passport-local"),
     fs = require("fs"),
     flash = require("connect-flash"),
-    resize = require("./resize"),
     User = require("./models/user"),
     Activity = require("./models/activity"),
     Issue = require("./models/issue"),
@@ -21,7 +20,6 @@ const express = require("express"),
     bookRoutes = require("./routes/books"),
     authRoutes = require("./routes/auth"),
     middleware = require("./middleware"),
-    Seed = require('./seed');
 
  //Seed(1000);
 

@@ -140,7 +140,6 @@ exports.postUploadUserImage = async (req, res, next) => {
             }
             await sharp(req.file.path)
                 .rotate()
-                .resize(500, 500)
                 .toFile(filename);
             
             fs.unlink(req.file.path, err => {
