@@ -32,7 +32,7 @@ app.use(bodyParser.urlencoded({extended : true}));
 app.use(sanitizer());
 
 // db config
-const url = 'mongodb://root:tayyip13@ds159254.mlab.com:59254/heroku_gfbhd3q3';
+const url = process.env.db_url || "mongodb://localhost/LMS1";
 mongoose.connect(url, {useNewUrlParser : true, useUnifiedTopology: true,});
 
 mongoose.set('useFindAndModify', false);
