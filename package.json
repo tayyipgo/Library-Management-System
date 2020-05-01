@@ -5,9 +5,9 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js"
+    "start": "node app.js"
   },
-  "author": "Azad Mamun",
+  "author": "Tayyip Gören",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
@@ -26,9 +26,5 @@
     "sharp": "^0.22.1",
     "uid": "^1.0.0",
     "uuid": "^3.3.2"
-  },
-  "devDependencies": {
-    "faker": "^4.1.0",
-    "nodemon": "^1.19.4"
   }
 }
